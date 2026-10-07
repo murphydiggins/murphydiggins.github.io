@@ -1,8 +1,1 @@
-Video playback fix
-
-Replace your existing index.html with the index.html in this package.
-The video and its preview are now embedded directly inside index.html, so the video needs no separate upload.
-Keep your existing media folder for the design photos. A copy is included here if needed.
-After uploading, wait for publication and hard-refresh the page (Command + Shift + R on Mac).
-
-The design headings are unnumbered. All other portfolio content is preserved.
+Replace your existing index.html with this version. The video has been removed, and all three designs retain their photos and unnumbered headings. Keep the existing media folder for the images; a copy is included if needed. After publication, refresh with Command + Shift + R on Mac.
