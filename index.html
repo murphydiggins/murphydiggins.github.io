@@ -1294,7 +1294,7 @@
                         ],
                         "supplemental": [
                                                 {
-                                                                        "title": "Design 1 · Ice Cube Mold",
+                                                                        "title": "Ice Cube Mold",
                                                                         "description": "An elastic-resin mold forms an ice block intended to cool the chip through surrounding cold air, direct ice contact, and meltwater. An 8° draft helps release the ice; filling to the retaining-wall lip creates a flat face that sits flush against the glass. Cylindrical pillars leave openings for the tubing ports.",
                                                                         "media": [
                                                                                                 {
@@ -1321,7 +1321,7 @@
                                                                         ]
                                                 },
                                                 {
-                                                                        "title": "Design 2 · Adjacent Water–Glycerol Cooling Channel",
+                                                                        "title": "Adjacent Water–Glycerol Cooling Channel",
                                                                         "description": "This single-outlet design adds a cooling channel beside the collagen stream. A proposed 50:50 water–glycerol solution at approximately −23 °C would draw heat through the 50 µm wall separating the channels. A future version could cool both sides of the collagen channel.",
                                                                         "media": [
                                                                                                 {
@@ -1336,13 +1336,13 @@
                                                                                                                         "label": "Cooling-channel prototype video",
                                                                                                                         "caption": "Fabricated cooling-channel prototype · video",
                                                                                                                         "src": "media/microfluidic/cooling-channel-walkthrough.mp4",
-                                                                                                                        "poster": "media/microfluidic/cooling-channel-cad.jpg",
+                                                                                                                        "poster": "media/microfluidic/cooling-channel-video-poster.jpg",
                                                                                                                         "alt": "Video of the fabricated chip with adjacent cooling channels and connected tubing"
                                                                                                 }
                                                                         ]
                                                 },
                                                 {
-                                                                        "title": "Design 3 · Four-Outlet Design",
+                                                                        "title": "Four-Outlet Design",
                                                                         "description": "Four droplet generators share one chip to increase simultaneous production while retaining similar channel and port dimensions. Collagen and oil are routed to each generator through smooth turns intended to support consistent flow. A shared retaining wall enables casting in one PDMS mold; testing will determine whether the four generators produce droplets at similar rates.",
                                                                         "media": [
                                                                                                 {
@@ -1365,7 +1365,7 @@
                         "accent": "blue",
                         "githubUrl": "",
                         "liveUrl": "",
-                        "designUpdateVersion": "2026-10-06-three-designs"
+                        "designUpdateVersion": "2026-10-06-three-designs-v2"
 },
                 {
                         "slug": "testicool-wearable-cooling",
@@ -1614,7 +1614,7 @@
         );
         next.projects = next.projects.map((project) => {
           if (project.slug !== "microfluidic-droplet-generator" ||
-              project.designUpdateVersion === "2026-10-06-three-designs") return project;
+              project.designUpdateVersion === "2026-10-06-three-designs-v2") return project;
           const updated = initialContent.projects.find((item) => item.slug === project.slug);
           return { ...project, ...structuredClone(updated) };
         });
@@ -1916,7 +1916,7 @@
       function imageButton(item, caption, imageAttrs = "") {
         if (item.type === "video") {
           const poster = item.poster ? ` poster="${escapeHtml(assetPath(item.poster))}"` : "";
-          return `<video controls playsinline preload="none"${poster} aria-label="${escapeHtml(item.alt || caption || item.label)}"><source src="${escapeHtml(assetPath(item.src))}" type="video/mp4">Your browser does not support this video. <a href="${escapeHtml(assetPath(item.src))}">Download the recording</a>.</video>`;
+          return `<video controls playsinline preload="metadata"${poster} aria-label="${escapeHtml(item.alt || caption || item.label)}"><source src="${escapeHtml(assetPath(item.src))}" type="video/mp4">Your browser does not support this video. <a href="${escapeHtml(assetPath(item.src))}">Download the recording</a>.</video>`;
         }
         const alt = item.alt || item.label || caption;
         const src = assetPath(item.src);
