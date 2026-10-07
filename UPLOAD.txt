@@ -1,0 +1,9 @@
+Portfolio update — October 6, 2026
+
+1. Unzip this package.
+2. Upload index.html to the root of your existing portfolio repository, replacing the old index.html.
+3. Upload the included media folder to the same root, keeping media/microfluidic/ and its filenames intact.
+4. Keep your existing images and files folders. This is an update package, not a replacement for the whole repository.
+5. Commit the upload. After GitHub Pages finishes publishing, refresh your portfolio and open the Microfluidic Droplet Generator project.
+
+Includes all three designs, six images, and the screen recording converted to MP4 for browser playback. The rest of the portfolio and analytics configuration are preserved. No changes have been published for you.

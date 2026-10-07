@@ -356,6 +356,14 @@
         background: #f7f9fb;
       }
 
+      .thumb video {
+        display: block;
+        width: 100%;
+        height: clamp(280px, 42vw, 620px);
+        object-fit: contain;
+        background: #f7f9fb;
+      }
+
       .thumb figcaption {
         padding: 8px 9px;
         color: var(--muted);
@@ -1245,60 +1253,120 @@
                         "slug": "microfluidic-droplet-generator",
                         "title": "Microfluidic Droplet Generator for Artificial Lymph Node Models",
                         "shortTitle": "Microfluidic Droplet Generator",
-                        "description": "Early-stage BME Design team project developing a microfluidic droplet platform for artificial lymph node models used to study cancer cell migration.",
-                        "overview": "I am leading a new BME Design project to build a microfluidic droplet generator for artificial lymph node models. The work is technically demanding because the device has to connect precise chip geometry, fluorinated oil and collagen flow behavior, PDMS casting, soft lithography, pressure regulation, pump automation, and temperature control into a workflow that can eventually support cell-culture studies of cancer cell migration.",
+                        "description": "Leading the design and prototyping of a collagen droplet generator for artificial lymph node models, with integrated cooling concepts and a four-generator layout.",
+                        "overview": "I lead a BME Design team developing a microfluidic platform to form collagen droplets for artificial lymph node models used to study cancer cell migration. My work connects SolidWorks design, PDMS fabrication, fluid routing, and temperature control to keep collagen from polymerizing before droplet formation.",
                         "features": [
-                                "Leading the design-to-fabrication workflow for an early-stage microfluidic device project.",
-                                "Designing chip layouts and channel geometry in SolidWorks while considering droplet formation, pressure balance, and collagen handling constraints.",
-                                "Building hands-on knowledge in microfluidics, fluid dynamics, PDMS casting, soft lithography, fabrication planning, and cell-culture-compatible experimental design.",
-                                "Planning integration of pressure regulation, pump automation, and cooling to keep collagen handling consistent during device operation."
+                                                "Leading device design, prototyping, and fabrication planning.",
+                                                "Developing an ice-block cooling mold and an adjacent water–glycerol cooling channel.",
+                                                "Scaling a single-generator concept to four generators on one chip.",
+                                                "Planning cooling and flow tests to assess droplet consistency."
                         ],
                         "technologies": [
-                                "Microfluidics",
-                                "SolidWorks",
-                                "PDMS",
-                                "Soft lithography",
-                                "Fluorinated oil",
-                                "Collagen",
-                                "Pressure regulation",
-                                "Pump automation",
-                                "Cell culture",
-                                "Fabrication"
+                                                "Microfluidics",
+                                                "SolidWorks",
+                                                "PDMS",
+                                                "Soft lithography",
+                                                "Fluorinated oil",
+                                                "Collagen",
+                                                "Pressure regulation",
+                                                "Pump automation",
+                                                "Cell culture",
+                                                "Fabrication"
                         ],
                         "sections": [
-                                {
-                                        "title": "Project challenge",
-                                        "body": "The goal is to create a microfluidic droplet generator that can form controlled collagen-based droplets for artificial lymph node models. That makes the project challenging at multiple levels: channel geometry affects droplet formation, fluid properties affect stability, collagen handling is temperature-sensitive, and the final workflow has to remain compatible with future cell-culture experiments."
-                                },
-                                {
-                                        "title": "Current work",
-                                        "body": "The project is just getting started, so the current focus is translating the biological goal into device architecture. I am working through early chip concepts, fabrication constraints, and the supporting system needed to control pressure, flow, pumping, and cooling before the design moves into more formal testing."
-                                },
-                                {
-                                        "title": "Why it matters",
-                                        "body": "A reliable artificial lymph node droplet platform will help our client study cancer cell migration in a controlled model environment. For me, it is also a high-value engineering challenge because it combines biomedical design, fabrication, fluid behavior, materials, automation, and experimental planning in one system."
-                                }
+                                                {
+                                                                        "title": "Design focus",
+                                                                        "body": "The device must balance consistent droplet formation with cooling during collagen delivery. These designs explore passive ice cooling, a separate coolant channel, and increased production through four parallel generators."
+                                                },
+                                                {
+                                                                        "title": "Testing ahead",
+                                                                        "body": "Cooling performance and droplet production still need to be characterized. Testing will assess collagen temperature, flow stability, and whether all four generators produce droplets at similar rates."
+                                                }
                         ],
                         "media": [
-                                {
-                                        "label": "Early Microfluidic Chip Prototype",
-                                        "src": "images/microfluidic-chip-early-prototype.jpg",
-                                        "alt": "Early clear microfluidic chip prototype held with a gloved hand",
-                                        "fit": "contain",
-                                        "caption": "Early microfluidic chip prototype"
-                                }
+                                                {
+                                                                        "label": "Early Microfluidic Chip Prototype",
+                                                                        "src": "images/microfluidic-chip-early-prototype.jpg",
+                                                                        "alt": "Early clear microfluidic chip prototype held with a gloved hand",
+                                                                        "fit": "contain",
+                                                                        "caption": "Early microfluidic chip prototype"
+                                                }
                         ],
                         "supplemental": [
-                                {
-                                        "title": "Early prototype work",
-                                        "description": "",
-                                        "media": []
-                                }
+                                                {
+                                                                        "title": "Design 1 · Ice Cube Mold",
+                                                                        "description": "An elastic-resin mold forms an ice block intended to cool the chip through surrounding cold air, direct ice contact, and meltwater. An 8° draft helps release the ice; filling to the retaining-wall lip creates a flat face that sits flush against the glass. Cylindrical pillars leave openings for the tubing ports.",
+                                                                        "media": [
+                                                                                                {
+                                                                                                                        "label": "Ice mold · CAD design",
+                                                                                                                        "caption": "Ice mold · CAD design",
+                                                                                                                        "src": "media/microfluidic/ice-mold-cad.jpg",
+                                                                                                                        "alt": "CAD model of the ice mold showing its retaining-wall lip and three cylindrical tubing-port pillars",
+                                                                                                                        "fit": "contain"
+                                                                                                },
+                                                                                                {
+                                                                                                                        "label": "Printed elastic-resin mold",
+                                                                                                                        "caption": "Printed elastic-resin mold",
+                                                                                                                        "src": "media/microfluidic/ice-mold-printed.png",
+                                                                                                                        "alt": "Transparent printed ice mold with a rectangular retaining wall and three pillars",
+                                                                                                                        "fit": "contain"
+                                                                                                },
+                                                                                                {
+                                                                                                                        "label": "Ice block fitted around tubing",
+                                                                                                                        "caption": "Ice block fitted around tubing",
+                                                                                                                        "src": "media/microfluidic/ice-block-on-chip.png",
+                                                                                                                        "alt": "Ice block positioned on the glass chip with tubing passing through the molded openings",
+                                                                                                                        "fit": "contain"
+                                                                                                }
+                                                                        ]
+                                                },
+                                                {
+                                                                        "title": "Design 2 · Adjacent Water–Glycerol Cooling Channel",
+                                                                        "description": "This single-outlet design adds a cooling channel beside the collagen stream. A proposed 50:50 water–glycerol solution at approximately −23 °C would draw heat through the 50 µm wall separating the channels. A future version could cool both sides of the collagen channel.",
+                                                                        "media": [
+                                                                                                {
+                                                                                                                        "label": "Adjacent cooling channel · CAD design",
+                                                                                                                        "caption": "Adjacent cooling channel · CAD design",
+                                                                                                                        "src": "media/microfluidic/cooling-channel-cad.jpg",
+                                                                                                                        "alt": "Single-outlet microfluidic mold with a cooling channel routed alongside the collagen channel",
+                                                                                                                        "fit": "contain"
+                                                                                                },
+                                                                                                {
+                                                                                                                        "type": "video",
+                                                                                                                        "label": "Cooling-channel prototype video",
+                                                                                                                        "caption": "Fabricated cooling-channel prototype · video",
+                                                                                                                        "src": "media/microfluidic/cooling-channel-walkthrough.mp4",
+                                                                                                                        "poster": "media/microfluidic/cooling-channel-cad.jpg",
+                                                                                                                        "alt": "Video of the fabricated chip with adjacent cooling channels and connected tubing"
+                                                                                                }
+                                                                        ]
+                                                },
+                                                {
+                                                                        "title": "Design 3 · Four-Outlet Design",
+                                                                        "description": "Four droplet generators share one chip to increase simultaneous production while retaining similar channel and port dimensions. Collagen and oil are routed to each generator through smooth turns intended to support consistent flow. A shared retaining wall enables casting in one PDMS mold; testing will determine whether the four generators produce droplets at similar rates.",
+                                                                        "media": [
+                                                                                                {
+                                                                                                                        "label": "Four-generator layout · CAD design",
+                                                                                                                        "caption": "Four-generator layout · CAD design",
+                                                                                                                        "src": "media/microfluidic/four-outlet-cad.jpg",
+                                                                                                                        "alt": "CAD model with four droplet generators and shared fluid routing inside a rectangular retaining wall",
+                                                                                                                        "fit": "contain"
+                                                                                                },
+                                                                                                {
+                                                                                                                        "label": "Fabricated four-generator prototype",
+                                                                                                                        "caption": "Fabricated four-generator prototype",
+                                                                                                                        "src": "media/microfluidic/four-outlet-prototype.png",
+                                                                                                                        "alt": "Transparent fabricated prototype showing four parallel droplet-generator channel patterns",
+                                                                                                                        "fit": "contain"
+                                                                                                }
+                                                                        ]
+                                                }
                         ],
                         "accent": "blue",
                         "githubUrl": "",
-                        "liveUrl": ""
-                },
+                        "liveUrl": "",
+                        "designUpdateVersion": "2026-10-06-three-designs"
+},
                 {
                         "slug": "testicool-wearable-cooling",
                         "title": "Testicool - Wearable Cooling & Temperature Monitoring System",
@@ -1544,6 +1612,12 @@
         next.projects = next.projects.filter(
           (project) => project.slug !== "microglia-mechanical-stretch"
         );
+        next.projects = next.projects.map((project) => {
+          if (project.slug !== "microfluidic-droplet-generator" ||
+              project.designUpdateVersion === "2026-10-06-three-designs") return project;
+          const updated = initialContent.projects.find((item) => item.slug === project.slug);
+          return { ...project, ...structuredClone(updated) };
+        });
         next.projects = next.projects.map((project) => cleanProjectCopy(enhanceTesticoolProject({
           ...project,
           githubUrl: project.githubUrl || "",
@@ -1840,6 +1914,10 @@
       }
 
       function imageButton(item, caption, imageAttrs = "") {
+        if (item.type === "video") {
+          const poster = item.poster ? ` poster="${escapeHtml(assetPath(item.poster))}"` : "";
+          return `<video controls playsinline preload="none"${poster} aria-label="${escapeHtml(item.alt || caption || item.label)}"><source src="${escapeHtml(assetPath(item.src))}" type="video/mp4">Your browser does not support this video. <a href="${escapeHtml(assetPath(item.src))}">Download the recording</a>.</video>`;
+        }
         const alt = item.alt || item.label || caption;
         const src = assetPath(item.src);
         return `<button class="image-open" type="button" data-lightbox-src="${escapeHtml(src)}" data-lightbox-caption="${escapeHtml(caption || alt)}"><img src="${escapeHtml(src)}" alt="${escapeHtml(alt)}" ${imageAttrs}></button>`;
